@@ -18,6 +18,10 @@
             <!-- Menú hamburguesa -->
             <div class=" w-[300px] h-14 flex items-center justify-start">
                 <i class="fa-solid fa-bars text-lg font-extralight text-gray-600 pl-5"></i>
+                <div class="flex lg:hidden ml-6">
+                    <i class="fa-solid fa-headphones-simple text-lg font-extralight text-gray-900 mx-2"></i>
+                </div>
+                
             </div>
         
             <!-- Logo -->
@@ -26,38 +30,41 @@
             </div>
         
             <!-- Sección de iconos -->
-            <div class=" w-[300px] h-14 flex items-center justify-between pr-4 ">
-                <!-- Contacto -->
-                <div class="flex items-center justify-center mx-4">
-                    <i class="fa-solid fa-headphones-simple text-lg font-extralight text-gray-900 mx-2"></i>
-                    <p class="text-sm font-bold">Contacto</p>
+            <div class=" w-[300px] h-14  items-center justify-between pr-4 ">
+                <div class=" hidden lg:flex items-center justify-between h-14">
+                    <div class="flex items-center justify-center mx-4">
+                        <i class="fa-solid fa-headphones-simple text-lg font-extralight text-gray-900 mx-2"></i>
+                        <p class="text-sm font-bold">Contacto</p>
+                    </div>
+                    <!-- Iconos adicionales -->
+                    <i class="fa-solid fa-user text-lg font-extralight text-gray-900 mx-4"></i>
+                    <i class="fa-solid fa-location-dot text-lg font-extralight text-gray-900 mx-4"></i>
+                    <i class="fa-solid fa-car-side text-lg font-extralight text-gray-900 mx-4"></i>
                 </div>
-                <!-- Iconos adicionales -->
-                <i class="fa-solid fa-user text-lg font-extralight text-gray-900 mx-4"></i>
-                <i class="fa-solid fa-location-dot text-lg font-extralight text-gray-900 mx-4"></i>
-                <i class="fa-solid fa-car-side text-lg font-extralight text-gray-900 mx-4"></i>
+                <!-- Contacto -->
+                
             </div>
         </header>
 
         <!-- MAIN IMG -->
-        <main class="main h-[650px] w-full max-w-[1700px]">
+        <main class="main  w-full max-w-[1700px] h-[1200px] lg:h-[650px]">
             <!-- BOX-TEXT-MAIN -->
-            <div class="m-16 w-[800px]">
-                <h1 class="text-6xl font-light">Nuevo Opel Grandland</h1>
-                <h2 class="text-3xl font-light text-gray-900 mt-2">#GOGRAND</h2>
+            <div class="m-16 lg:w-[800px] sm:w-auto">
+                <h1 class="text-white text-4xl lg:text-6xl lg:text-black font-light ">Nuevo Opel Grandland</h1>
+                <h2 class="lg:text-3xl font-light text-white lg:text-gray-900 lg:mt-2">#GOGRAND</h2>
                 <!-- INFORMATION -->
-                <div class="mt-8">
-                    <p class="text-lg font-medium text-gray-900">Desde</p>
+                <div class="mt-2 lg:mt-8">
+                    <p class="text-white text-sm lg:text-lg font-medium lg:text-gray-900">Desde</p>
                     <div class="flex items-baseline space-x-2">
-                        <span class="text-6xl font-bold">189€</span>
-                        <span class="text-2xl font-medium">/mes<sup>1</sup></span>
+                        <span class="text-white text-3xl lg:text-6xl lg:text-black font-bold">189€</span>
+                        <span class="text-white text-xs lg:text-2xl lg:text-black  font-medium">/mes<sup>1</sup></span>
                     </div>
-                    <p class="text-xs mt-4 text-gray-900">(de los cuales 19,04 € son el seguro de crédito no incluido en la financiación).</p>
-                    <p class="text-xs font-bold text-gray-900 mt-2">Entrada: 9.369,15 €. Última cuota: 23.580,68 €</p>
+                    <p class="text-[0.65rem] lg:text-xs mt-4 text-gray-900">(de los cuales 19,04 € son el seguro de crédito no incluido en la financiación).</p>
+                    <p class="text-[0.65rem] lg:text-xs font-bold text-gray-900 mt-2">Entrada: 9.369,15 €. Última cuota: 23.580,68 €</p>
                 </div>
                 <!-- PROMOTION -->
-                <div class="mt-6">
-                    <p class="text-xl font-bold">Sólo este mes</p>
+                <div class="mt-2 lg:mt-6">
+                    <p class="lg:text-black text-white text-xl font-bold">Sólo este mes</p>
                     <button class="mt-4 px-4 py-2.5 text-sm bg-black text-white rounded-3xl shadow-lg font-bold hover:bg-yellow-400 hover:text-black">Descúbrelo</button>
                 </div>
             </div>
@@ -77,7 +84,7 @@
             </div>
         </main>
          <!-- CARROUSEL -->
-        <div class="relative w-full max-w-[1700px]  mx-auto overflow-hidden border-2 border-black mt-10">
+        <div class="relative w-full max-w-[1700px]  mx-auto overflow-hidden mt-10 mb-10">
             <!-- CONTAINER -->
             <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
                 <!-- GROUP IMG AND TEXT -->
@@ -130,18 +137,18 @@
             </button>
         </div>
         <!-- TEXT AND IMG 1 -->
-        <main class="w-full max-w-[1700px] h-[680px] border-2 border-black mt-10 flex flex-row lg:flex-col justify-between">
+        <main class="w-full max-w-[1700px]  mt-10 flex flex-col-reverse lg:flex-row justify-between">
             <!-- TEXT BOX -->
-            <div class="border-2 border-black m-5 w-8/12 flex flex-col items-start justify-center pl-8">
+            <div class="w-8/12 flex flex-col items-start justify-center pl-8">
                 <div class="m-0">
-                    <h1 class="text-5xl font-light">Nuevo Opel Frontera</h1>
+                    <h1 class="lg:text-5xl font-light sm:text-3xl mt-5">Nuevo Opel Frontera</h1>
                     <h2 class="text-xl font-light text-gray-900 mt-2">Disponible en versión híbrida o eléctrica</h2>
                 </div>
                 <!-- INFORMATION -->
                 <div class="mt-8">
                     <p class="text-lg font-medium text-gray-900">Desde</p>
                     <div class="flex items-baseline space-x-2">
-                        <span class="text-6xl font-bold">129€</span>
+                        <span class="lg:text-6xl font-bold sm:text-3xl">129€</span>
                         <span class="text-2xl font-medium">/mes<sup>1</sup></span>
                     </div>
                     <p class="text-xs mt-4 text-gray-900">Durante 22 mensualidades + 1 mensualidad de 4.518,61 (en el mes 19).</p>
@@ -150,29 +157,29 @@
                 <!-- PROMOTION -->
                 <div class="mt-6">
                     <p class="text-xl font-bold">Sólo este mes</p>
-                    <button class="mt-10 px-4 py-2.5 text-sm border-2 border-black rounded-3xl shadow-lg font-bold ">Aprovecha esta oferta</button>
+                    <button class="mt-10 px-4 py-2.5 text-sm border-2 border-black rounded-3xl shadow-lg font-bold sm:mb-20">Aprovecha esta oferta</button>
                 </div>
             </div>
             <!-- IMAGE BOX -->
-            <div class="w-10/12 border-2 border-black overflow-hidden">
+            <div class="lg:w-10/12 overflow-hidden xs:w-full h-auto">
                 <img src="./assets/images/frontera_main.jpg" alt="Opel Frontera" class="w-full h-full object-contain">
             </div>
         </main>
 
         <!-- TEXT AND IMG 2 -->
-        <main class="w-full max-w-[1700px] h-[680px] border-2 border-black mt-10 flex flex-row-reverse lg:flex-col justify-between">
+        <main class="w-full max-w-[1700px]  flex flex-col-reverse lg:flex-row-reverse justify-between mb-10">
             <!-- TEXT BOX -->
-            <div class="border-2 border-black m-5 w-8/12 flex flex-col items-start justify-center pl-8">
+            <div class="w-8/12 flex flex-col items-start justify-center pl-8">
                 <div class="m-0">
-                    <h1 class="text-5xl font-light">Nuevo Opel Frontera</h1>
-                    <h2 class="text-xl font-light text-gray-900 mt-2">Disponible en versión híbrida o eléctrica</h2>
+                    <h1 class="lg:text-5xl font-light sm:text-3xl mt-5">Nuevo Opel Mokka</h1>
+                    <h2 class="text-xl font-light text-gray-900 mt-2">Haz que todos te miren</h2>
                 </div>
                 <!-- INFORMATION -->
                 <div class="mt-8">
                     <p class="text-lg font-medium text-gray-900">Desde</p>
                     <div class="flex items-baseline space-x-2">
-                        <span class="text-6xl font-bold">129€</span>
-                        <span class="text-2xl font-medium">/mes<sup>1</sup></span>
+                        <span class="lg:text-6xl font-bold sm:text-3xl">139€</span>
+                        <span class="text-2xl font-medium">/mes<sup>3</sup></span>
                     </div>
                     <p class="text-xs mt-4 text-gray-900">Durante 22 mensualidades + 1 mensualidad de 4.518,61 (en el mes 19).</p>
                     <p class="text-xs font-bold text-gray-900 mt-2">Entrada: 1.836,78€. Cuota final: 18.406,30€.</p>
@@ -180,12 +187,12 @@
                 <!-- PROMOTION -->
                 <div class="mt-6">
                     <p class="text-xl font-bold">Sólo este mes</p>
-                    <button class="mt-10 px-4 py-2.5 text-sm border-2 border-black rounded-3xl shadow-lg font-bold ">Aprovecha esta oferta</button>
+                    <button class="mt-10 px-4 py-2.5 text-sm border-2 border-black rounded-3xl shadow-lg font-bold sm:mb-20">Descúbrelo</button>
                 </div>
             </div>
             <!-- IMAGE BOX -->
-            <div class="w-10/12 border-2 border-black overflow-hidden">
-                <img src="./assets/images/frontera_main.jpg" alt="Opel Frontera" class="w-full h-full object-contain">
+            <div class="lg:w-10/12 overflow-hidden xs:w-full h-auto">
+                <img src="./assets/images/mokka__main.png" alt="Opel Frontera" class="w-full h-full object-contain">
             </div>
         </main>
         <!-- FOOTER -->
