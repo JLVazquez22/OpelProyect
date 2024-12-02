@@ -40,7 +40,7 @@
         </header>
 
         <!-- MAIN IMG -->
-        <main class="main border-2 border-black h-[650px] w-full max-w-[1700px]">
+        <main class="main h-[650px] w-full max-w-[1700px]">
             <!-- BOX-TEXT-MAIN -->
             <div class="m-16 w-[800px]">
                 <h1 class="text-6xl font-light">Nuevo Opel Grandland</h1>
@@ -62,6 +62,134 @@
                 </div>
             </div>
         </main>
+
+        <!-- MAIN DISCOUNT -->
+        <main class=" w-full max-w-[1700px] flex flex-col justify-center items-center">
+            <div class="mt-8 w-60">
+                <button class="mt-4 px-6 py-2.5 text-sm border-2 border-black rounded-full font-bold ">Ver las últimas ofertas</button>
+            </div>
+            <div class="mt-10 w-9/12">
+                <h1 class="text-5xl font-light text-center">Descubre los modelos Opel</h1>
+                <p class="text-center text-xs font-light text-gray-900 mt-6">Descubre la gama de coches y furgonetas Opel. Desde vehículos modernos hasta prácticas furgonetas, 
+                    Opel ofrece el modelo adecuado para cada necesidad. Perfectos para la vida diaria y el trabajo, Opel 
+                    combina tecnología innovadora con un diseño atractivo y una gran funcionalidad. Experimenta el mundo Opel ahora.
+                </p>
+            </div>
+        </main>
+         <!-- CARROUSEL -->
+        <div class="relative w-full max-w-[1700px]  mx-auto overflow-hidden border-2 border-black mt-10">
+            <!-- CONTAINER -->
+            <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                <!-- GROUP IMG AND TEXT -->
+                <div class="flex w-full flex-shrink-0 justify-between space-x-4">
+                    <!-- ITEM -->
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__astra.png" alt="Imagen 1" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Astra</p>
+                    </div>
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__astraPlug.png" alt="Imagen 2" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Astra Plug</p>
+                    </div>
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__astraSport.png" alt="Imagen 3" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Astra Sport</p>
+                    </div>
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__corsa.png" alt="Imagen 4" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Corsa</p>
+                    </div>
+                </div>
+        
+                <div class="flex w-full flex-shrink-0 justify-between space-x-4">
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__frontera.png" alt="Imagen 5" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Frontera</p>
+                    </div>
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__grandland.png" alt="Imagen 6" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Grandland</p>
+                    </div>
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__mokka.png" alt="Imagen 7" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Mokka</p>
+                    </div>
+                    <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
+                        <img src="./assets/images/car__mokkaElectrinc.png" alt="Imagen 8" class="w-full mb-2">
+                        <p class="text-center text-lg font-bold mt-1 md:text-xl">Mokka Electric</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- BUTTONS -->
+            <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full" onclick="moveCarousel(-1)">
+                &#10094;
+            </button>
+            <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full" onclick="moveCarousel(1)">
+                &#10095;
+            </button>
+        </div>
+        <!-- TEXT AND IMG 1 -->
+        <main class="w-full max-w-[1700px] h-[680px] border-2 border-black mt-10 flex flex-row lg:flex-col justify-between">
+            <!-- TEXT BOX -->
+            <div class="border-2 border-black m-5 w-8/12 flex flex-col items-start justify-center pl-8">
+                <div class="m-0">
+                    <h1 class="text-5xl font-light">Nuevo Opel Frontera</h1>
+                    <h2 class="text-xl font-light text-gray-900 mt-2">Disponible en versión híbrida o eléctrica</h2>
+                </div>
+                <!-- INFORMATION -->
+                <div class="mt-8">
+                    <p class="text-lg font-medium text-gray-900">Desde</p>
+                    <div class="flex items-baseline space-x-2">
+                        <span class="text-6xl font-bold">129€</span>
+                        <span class="text-2xl font-medium">/mes<sup>1</sup></span>
+                    </div>
+                    <p class="text-xs mt-4 text-gray-900">Durante 22 mensualidades + 1 mensualidad de 4.518,61 (en el mes 19).</p>
+                    <p class="text-xs font-bold text-gray-900 mt-2">Entrada: 1.836,78€. Cuota final: 18.406,30€.</p>
+                </div>
+                <!-- PROMOTION -->
+                <div class="mt-6">
+                    <p class="text-xl font-bold">Sólo este mes</p>
+                    <button class="mt-10 px-4 py-2.5 text-sm border-2 border-black rounded-3xl shadow-lg font-bold ">Aprovecha esta oferta</button>
+                </div>
+            </div>
+            <!-- IMAGE BOX -->
+            <div class="w-10/12 border-2 border-black overflow-hidden">
+                <img src="./assets/images/frontera_main.jpg" alt="Opel Frontera" class="w-full h-full object-contain">
+            </div>
+        </main>
+
+        <!-- TEXT AND IMG 2 -->
+        <main class="w-full max-w-[1700px] h-[680px] border-2 border-black mt-10 flex flex-row-reverse lg:flex-col justify-between">
+            <!-- TEXT BOX -->
+            <div class="border-2 border-black m-5 w-8/12 flex flex-col items-start justify-center pl-8">
+                <div class="m-0">
+                    <h1 class="text-5xl font-light">Nuevo Opel Frontera</h1>
+                    <h2 class="text-xl font-light text-gray-900 mt-2">Disponible en versión híbrida o eléctrica</h2>
+                </div>
+                <!-- INFORMATION -->
+                <div class="mt-8">
+                    <p class="text-lg font-medium text-gray-900">Desde</p>
+                    <div class="flex items-baseline space-x-2">
+                        <span class="text-6xl font-bold">129€</span>
+                        <span class="text-2xl font-medium">/mes<sup>1</sup></span>
+                    </div>
+                    <p class="text-xs mt-4 text-gray-900">Durante 22 mensualidades + 1 mensualidad de 4.518,61 (en el mes 19).</p>
+                    <p class="text-xs font-bold text-gray-900 mt-2">Entrada: 1.836,78€. Cuota final: 18.406,30€.</p>
+                </div>
+                <!-- PROMOTION -->
+                <div class="mt-6">
+                    <p class="text-xl font-bold">Sólo este mes</p>
+                    <button class="mt-10 px-4 py-2.5 text-sm border-2 border-black rounded-3xl shadow-lg font-bold ">Aprovecha esta oferta</button>
+                </div>
+            </div>
+            <!-- IMAGE BOX -->
+            <div class="w-10/12 border-2 border-black overflow-hidden">
+                <img src="./assets/images/frontera_main.jpg" alt="Opel Frontera" class="w-full h-full object-contain">
+            </div>
+        </main>
+        
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
