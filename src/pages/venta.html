@@ -14,40 +14,90 @@
 <body class="m-0 p-0">
     <div class=" mx-w-full flex flex-col items-center justify-center ">
         <!-- NAV -->
-        <header class="h-[65px] flex items-center justify-between px-4 w-full max-w-[1700px]">
-            <!-- Menú hamburguesa -->
-            <div class=" w-[300px] h-14 flex items-center justify-start">
-                <i class="fa-solid fa-bars text-lg font-extralight text-gray-600 pl-5"></i>
+        <header class="h-[65px] flex items-center justify-between px-4 w-full max-w-[1700px] fixed top-0 bg-white shadow-lg z-10">
+            <!--   NAV HAMBURGUER -->
+            <div class="w-[300px] h-14 flex items-center justify-start">
+                <i id="menu-icon" class="fa-solid fa-bars text-lg font-extralight text-gray-600 pl-5 cursor-pointer"></i>
                 <div class="flex lg:hidden ml-6">
                     <i class="fa-solid fa-headphones-simple text-lg font-extralight text-gray-900 mx-2"></i>
                 </div>
-                
+            </div>
+            <!-- NAV DESPLEGABLE -->
+            <div id="menu" class="hidden absolute top-[65px] left-0 bg-white shadow-lg w-full lg:w-[350px]  p-4 z-10">
+                <ul class="mb-5">
+                    <li class="py-2 border-b border-black my-5 mx-3">
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-black font-bold">Turismos</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </li>
+                    <li class="py-2 border-b border-black my-5 mx-3">
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-black font-bold">Comerciales</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </li>
+                    <li class="py-2 border-b border-black my-5 mx-3">
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-black font-bold">Ofertas y financiación</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </li>
+                    <li class="py-2 border-b border-black my-5 mx-3">
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-black font-bold">Eléctrico & Híbrido</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </li>
+                    <li class="py-2 border-b border-black my-5 mx-3">
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-black font-bold">Servicios Conectados</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </li>
+                </ul>
+                <div class="flex flex-col mx-3 mt-12">
+                    <!-- BOX LINKS -->
+                    <div class="flex items-center my-3">
+                        <i class="fa-solid fa-headphones-simple text-lg font-extralight text-gray-900"></i>
+                        <a href="#"><span class="ml-2 font-bold">Contacto</span></a>
+                    </div>
+                    <div class="flex items-center my-3">
+                        <i class="fa-solid fa-user text-lg font-extralight text-gray-900 "></i>
+                        <a href="./register.html"><span class="ml-2 font-bold">Register MyOpel</span></a>
+                    </div>
+                    <div class="flex items-center my-3">
+                        <i class="fa-solid fa-location-dot text-lg font-extralight text-gray-900¡"></i>
+                        <a href="#"><span class="ml-2 font-bold">Red Opel</span></a>
+                    </div>
+                    <div class="flex items-center my-3">
+                        <i class="fa-solid fa-car-side text-lg font-extralight text-gray-900"></i>
+                        <a href="#"><span class="ml-2 font-bold">Configura y compra</span></a>
+                    </div>
+                </div>
             </div>
         
-            <!-- Logo -->
-            <div class=" w-[100px] flex items-center justify-center">
-               <a href="../index.html"><img src="../assets/images/logo__opel.jpg" class="w-14 h-14" alt="Logo Opel"></a> 
+            <!-- ICON -->
+            <div class="w-[100px] flex items-center justify-center">
+                <a href="../index.html"><img src="../assets/images/logo__opel.jpg" class="w-14 h-14" alt="Logo Opel"></a>
             </div>
         
-            <!-- Sección de iconos -->
-            <div class=" w-[300px] h-14  items-center justify-between pr-4 ">
-                <div class=" hidden lg:flex items-center justify-between h-14">
+            <!-- ICONS -->
+            <div class="w-[300px] h-14 items-center justify-between pr-4">
+                <div class="hidden lg:flex items-center justify-between h-14">
                     <div class="flex items-center justify-center mx-4">
                         <i class="fa-solid fa-headphones-simple text-lg font-extralight text-gray-900 mx-2"></i>
                         <p class="text-sm font-bold">Contacto</p>
                     </div>
-                    <!-- Iconos adicionales -->
                     <a href="./register.html"><i class="fa-solid fa-user text-lg font-extralight text-gray-900 mx-4"></i></a>
-                    <a href="#"><i class="fa-solid fa-location-dot text-lg font-extralight text-gray-900 mx-4"></i></a>
+                    <i class="fa-solid fa-location-dot text-lg font-extralight text-gray-900 mx-4"></i>
                     <a href="#"><i class="fa-solid fa-car-side text-lg font-extralight text-gray-900 mx-4"></i></a>
                 </div>
-                <!-- Contacto -->
-                
             </div>
         </header>
 
         <!-- MAIN IMG -->
-        <main class="main__venta  w-full h-[650px] max-w-[1700px] max-h-[650px]">
+        <main class="main__venta  w-full h-[650px] max-w-[1700px] max-h-[650px] mt-[65px]">
             <!-- BOX-TEXT-MAIN -->
             <div class="m-16 w-[400px]  lg:w-[400px]">
                 <h1 class="text-white text-2xl sm:text-4xl  font-light ">Compra tu nuevo Opel Online es mas facil de lo que piensas</h1>
@@ -294,6 +344,6 @@
               </div>
         </footer>
     </div>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
