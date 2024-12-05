@@ -92,6 +92,18 @@ const validarFormulario = (event) => {
   }
 };
 
+// MODAL
+let modal = document.getElementById("modal");
+let closeModal = document.getElementById("closeModal");
 
+const cerrarModal = () =>{  
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+}
+
+
+// LISTENER
+closeModal.addEventListener("click",cerrarModal);
 form.addEventListener("submit", validarFormulario);
 form.addEventListener("input", validarInputs);
+
